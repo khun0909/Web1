@@ -1,0 +1,18 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    height: 100vh;  /*뷰포트 높이*/
+    display: flex;; /*컨테이너 내부의 아이템들을 flexbox 방식으로 배치*/
+    flex-direction: column; /*내부 아이템은 세로로 배치*/
+    justify-content: center; /*세로로 배치한 아이템을 가운데 정렬*/
+    align-items: center; /*아이템들을 수평 가운데로 정렬*/
+    font-size: 32px;
+}
+
+
+
+
+

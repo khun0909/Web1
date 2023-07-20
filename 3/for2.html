@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+<body>
+    <script>
+        var names = ['kim', 'sae', 'choi', 'Han'];
+
+        for(var name in names){        //객체 위치값을 가져옴  names -> name
+            document.write(name + '  ');  //객체의 순번을 출력 
+            document.write(names[name]+'<br>');  //객체의 항목을 출력 
+        }
+
+        for(var name of names){        //객체 위치값을 가져옴  names -> name
+            document.write(name + '<br>'); 
+        }
+
+
+        names.forEach(function(name){
+            document.write(name + '<br>')
+        });
+
+        names.forEach(name => document.write(name + '<br>'));    //function = => 같은 의미임
+
+    </script>
+</body>
+</html>

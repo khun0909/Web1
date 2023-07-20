@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 문</title>
+</head>
+<body>
+    <script>
+        var names = ['kim', 'sae', 'choi', 'Han'];
+
+        for(var i = 0; i <5; i++)        {
+            document.write(names[i] + '님 안녕하세요.');
+        }
+
+        // for(var i = 0; i < names.length; i++)        {   //배열의 길이로 불러옴
+        //     document.write(names[i] + '님 안녕하세요.');
+        // }
+
+        let a;
+        let sum = 0;
+
+        //1 ~ 10 Rkwl
+        for (a=0; a<11; a++){
+            sum +=a;
+        }
+
+        console.log(sum);
+
+
+
+
+        //1~100까지 짝수의 합
+        sum = 0;
+        for (i=0; i <101; i+=2){
+            sum += i;
+        }
+        console.log(sum);
+
+    </script>
+</body>
+</html>

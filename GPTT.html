@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>라디오 버튼 예제</title>
+</head>
+<body>
+    <form id="testForm">
+        <input type="radio" name="subject" value="math" id="mathRadio">
+        <label for="mathRadio">Math</label>
+        <br>
+        <input type="radio" name="subject" value="science" id="scienceRadio">
+        <label for="scienceRadio">Science</label>
+        <br>
+        <input type="radio" name="subject" value="history" id="historyRadio">
+        <label for="historyRadio">History</label>
+        <br>
+        <button type="button" id="showSelectedButton">선택 확인</button>
+    </form>
+
+    <script>
+        const radioButtons = document.getElementsByName("subject");
+        const showSelectedButton = document.getElementById("showSelectedButton");
+
+        showSelectedButton.onclick = function() {
+            let selectedValue = null;
+
+            for (let i = 0; i < radioButtons.length; i++) {
+                if (radioButtons[i].checked) {
+                    selectedValue = radioButtons[i].value;
+                    break;
+                }
+            }
+
+            if (selectedValue !== null) {
+                console.log("선택된 항목의 값: " + selectedValue);
+            } else {
+                console.log("항목을 선택해주세요.");
+            }
+        };
+    </script>
+</body>
+</html>
