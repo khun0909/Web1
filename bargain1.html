@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인 가격 계산 프로그램</title>
+    <link rel="stylesheet" href="./css/bargain.css">
+    <script src="./js/bargain.js"></script>
+</head>
+
+<body>
+    <h1>할인 가격 계산기</h1>
+    <div id="name"></div>
+    <div id="content">
+        <img src="./images/sale.png" alt="">
+
+        <ul>
+            <li>
+                <label for="oPrice">판매 금액</label>
+                <input type="text" id="oPrice">원
+            </li>
+            <li>
+                <label for="dcRate">할인율</label>
+                <input type="text" id="dcRate">%
+            </li>
+            <li>
+                <button onclick="showPrice()">할인 가격 계산</button>
+                <!-- 버튼 클릭 시 showPrice() 사용자 함수 실행 -->
+            </li>
+        </ul>
+        <div id="showResult"></div>
+    </div>
+
+</body>
+
+</html>

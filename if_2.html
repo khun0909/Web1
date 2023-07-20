@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 문을 이용한 성적 산출</title>
+</head>
+
+<body>
+    <script>
+        //학점 출력 90이상 a, 80~89 b,70~79 c, 60~69 d
+
+        let score = prompt('당신의 학점은?.');
+
+        if(score){
+            score = Number(score);
+        }else
+            document.write('값이 입력되지 않았습니다.');
+
+
+        if (score != 0) {
+            if (score < 0 || score > 100) {   //or 비교  and 연산은 &&
+                alert('입력범위 초과입니다.');
+            } else if (score >= 90) {
+                alert('당신의 학점은 a입니다.');
+            } else if (score >= 80) {
+                alert('당신의 학점은 b입니다.');
+            } else if (score >= 70) {
+                alert('당신의 학점은 c입니다.');
+            } else (score >= 60)
+            alert('당신의 학점은 d입니다.');
+        } else
+            alert('값이 입력되지 않았습니다.');
+
+    </script>
+
+</body>
+
+</html>

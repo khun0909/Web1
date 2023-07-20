@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>
+        let subject = prompt('과목을 입력하세요.(1-국,2-영,3-수)');
+        
+        if(subject !== null){
+            switch(subject){
+                case '1':
+                    alert('국어');
+                    break;
+                case '2':
+                    alert('영어');
+                    break;
+                case '3':
+                    alert('수학');
+                    break;
+                default:
+                    alert('잘못 선택하셨습니다.');
+                    break;
+            }
+        }
+        else{
+            alert('선택하지 않으셨습니다.')
+        }
+
+
+
+
+    </script>
+</body>
+</html>

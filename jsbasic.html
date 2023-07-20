@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수와 자료형 복습</title>
+</head>
+<body>
+    <script>
+        //알림창
+        alert("Hello World");
+
+        //확인창
+        var YesNo = confirm("종료하시겠습니까?");
+
+        if(YesNo == true){
+            alert(YesNo + "종료합니다.");
+        }else{ 
+            alert(YesNo + "종료하지 않습니다.");
+        }
+        console.log(YesNo);
+    //프롬프트 표시창
+        const names = prompt("이름을 입력해주세요.", "기본값");
+        document.write(names);
+
+        names = "홍길동";
+        document.write(names);
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+        var x = 10, y=3, result;//변수 선언 및 초기화
+
+        //덧셈 연산
+        result = x + y;
+        console.log("x+y=" + result);
+        
+        //나누기 연산
+        result = x/y;
+        console.log("x/y="+result);
+
+        //나머지 연산
+        console.write("x%y="+result);
+    </script>
+
+    <script>
+    var a = 10;     //a=10
+    var b = a++ +5; //a=11 b=15   (a+b=15 -> a:후 연산자)
+    var c = b--;    //a=11 b=14 c=14
+    console.log(a,b,c);   //11 14 15
+
+    var a = 10;    //a=10
+    var b =++a +5; //a=11, b=16
+    var c = --b;   //a=11, b=15, c=15
+    console.log(a,b,c);  //11 15 15
+    </script>
+
+    <script>
+        //할당 연산자
+        var a = 10;
+        a = a+5;
+        console.log(a);
+
+        var a = 10;
+        a += 5;
+        console.log(a);
+
+        y=10;
+        y+=a;
+        console.log(y);
+    </script>
+
+    <script>
+        //문자열 연산(+): 연결 연산자
+        var name = "홍길동";
+        console.log(name+"님 안녕하세요!")
+
+        var a = 10;
+        console.log(a="20"); //1020
+        
+        var a = "100";
+        var b = "10";
+        console.log(a/b);  //10
+
+        var a="100";
+        var b="js";
+        console.log(a/b);   //NaN
+    </script>
+
+    <script>
+        //비교연산자
+        var a=3, b="3"
+        console.log(a==b);
+        console.log(a===b);
+        console.log(a!=b);
+        console.log(a!==b);
+        console.log(a<b);
+        console.log(a<=b);
+        console.log(a>b);
+        console.log(a>=b);
+
+        console.log("a">"b");
+        console.log("Java">= "JAVA");
+        console.log("a".charCodeAt());
+        console.log("b".charCodeAt());
+        console.log("A".charCodeAt());
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
