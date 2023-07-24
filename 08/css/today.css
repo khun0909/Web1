@@ -26,3 +26,7 @@ body {
 #clock {
   font-size:1em;
 }
+ span {
+  font-weight:bold;
+  color:#f00;
+ }
