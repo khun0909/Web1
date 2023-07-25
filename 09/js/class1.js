@@ -37,3 +37,8 @@ console.log(book3);
 
 console.log(`${book3.title}, ${book3.author}, ${book3.readBook()}`);
 console.log(`${book4.title}, ${book4.author}, ${book4.readBook()}`);
+
+for(key in book3) {
+    console.log(`${key} : ${book3[key]}`);
+}
+
