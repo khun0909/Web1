@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문</title>
+</head>
+<body>
+    <!-- while을 이용한 사용자 입력값 합계/평균 계산 -->
+    <script>
+        var sum =0;
+        var cnt = 0;
+        var userNum=0;
+        var avg;
+        var nums = [];  // 입력한 숫자를 저장할 배열
+
+        // -1이 입력될 때까지 반복(if문 사용금지)
+        while (true) {
+            userNum = parseInt(prompt('숫자를 입력하세요. (종료 : -1)'));
+            if (userNum == -1) {
+                break;
+            }
+            nums.push(userNum); // 배열에 입력한 숫자 저장(배열의 끝에 요소 추가)
+            console.log('nums : ' + nums);
+
+            sum += userNum; // 합계 계산
+            console.log('sum : ' + sum);
+            cnt++;   // 입력 횟수 계산
+            console.log('cnt : ' + cnt);
+        }
+
+        // 평균 계산
+        avg = sum / cnt;
+        document.write('입력한 숫자의 합계 : ' + sum +"/평균 : " + avg + '<br>');
+        document.write('입력한 숫자의 개수 : ' + cnt + '<br>');
+        document.write('입력한 숫자 : ' + nums + '<br>');
+    </script>
+</body>
+</html>

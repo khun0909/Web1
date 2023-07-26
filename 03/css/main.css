@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  height:100vh;
+  display: flex; /*  컨테이너 내부의 아이템들이 어떤 방식으로 배치될지를 뜻 */ 
+  flex-direction: column;  /*  컨테이너 내부의 아이템들이 만들어지는 방향을 뜻 */
+  justify-content: center; /*  컨테이너 내부의 아이템들을 어떻게 배치할지를 뜻: 가로축 - 중심축*/
+  align-items: center;  /*  컨테이너 내부의 아이템들을 어떻게 배치할지를 뜻: 세로축 - 교차축*/
+  font-size:32px;
+}
+
+

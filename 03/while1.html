@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 반복문</title>
+</head>
+<body>
+    <script>
+        //while문을 이용해 0 ~100 까지 합을 구하시오.
+        var sum = 0;
+        var i = 101;
+
+        while (i <= 100) {
+            sum += i;
+            i++;
+        }
+        document.write('0 ~ 100 까지의 합 : ' + sum + '<br>');
+
+
+        //do while문을 이용해 0 ~100 까지 합을 구하시오.
+        var sum = 0;
+        var i = 101;
+
+        do {
+            sum += i;
+            i++;
+        } while (i <= 100)
+        document.write('0 ~ 100 까지의 합 : ' + sum );
+    </script>
+</body>
+</html>

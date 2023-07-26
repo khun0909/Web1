@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할인 가격 계산 프로그램</title>
+    <link rel="stylesheet" href="css/bargain.css">
+    <script src="js/bargain.js"></script>
+</head>
+
+<body>
+    <div id="contents">
+        <h1 id="showName"></h1>
+        <img src="images/sale.png" alt="">
+        <ul>
+            <li>
+                <label for="oPrice">판매 금액</label>
+                <input type="text" id="oPrice">원
+            </li>
+            <li>
+                <!-- <label>할인율<input type="text" id="dcRate">%</label> -->
+                <label for="dcRate">할인율</label>
+                <input type="text" id="dcRate">%
+            </li>
+            <li>
+                <button onclick="showPrice()">할인 가격 계산</button>
+                <!-- 버튼 클릭시 showPrice() 사용자 함수 실행 -->
+            </li>
+        </ul>
+        <div id="showResult"></div>
+    </div>
+    <script>
+        var usernames = prompt("사용자 이름을 입력하세요.", "홍길동");
+        document.querySelector("#showName").innerHTML = "<p>" + usernames + "님, 안녕하세요.</p>";
+    </script>
+</body>
+
+</html>

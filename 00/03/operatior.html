@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+        var x = 10, y= 3, result; // 변수 선언 및 초기화
+
+        // 덧샘 연산
+        result = x + y;
+        console.log("x + y = " + result);
+
+        // 나누기 연산
+        result = x / y;
+        console.log("x / y = " + result);
+        
+        // 나머지 연산
+        result = x % y;
+        // console.log("x % y = " + result);
+        document.write("x % y = " + result);
+    </script>
+    <script>
+        // 증감 연산자
+        var a = 10;        // a=10
+        var b = a++ + 5;   // a=11, b=15  (1.a+b=15, 2.a++: 후연산자)
+        var c = b--;       // a=11, b=14, c=15
+        console.log(a, b, c);
+
+        var a = 10;        // a=10
+        var b = ++a + 5;   // a=11, b=16  (1.a++: 선연산자, 2.a+b=16)
+        var c = --b;       // a=11, b=15, c=15
+        console.log(a, b, c);
+    </script>
+    <script>
+        // 할당 연산자
+        var a = 10;
+        a = a + 5;  
+        console.log(a);
+
+        var a = 10;
+        a += 5;  // a=15
+        y = 10;
+        y += a   // y=25
+        
+        console.log(a, y);
+    </script>
+    <script>
+        // 문자열 연산(+): 연결 연산자
+        var name = "홍길동";
+        console.log(name + "님, 안녕하세요?");
+
+        var a = 10;
+        console.log(a + "20");  // 1020
+
+        var a = 100;
+        var b = "10";
+        console.log(a / b);     // 10
+
+        var a = 100;
+        var b = "js";
+        console.log(a / b);     // NaN
+    </script>
+    <script>
+        // 비교연산자
+        var a = 3, b ="3";
+        console.log(a == b);    // true
+        console.log(a === b);   // false
+        console.log(a != b);    // false
+        console.log(a !== b);  // true
+        console.log(a <= b);   // true
+
+        // 아스키코드를 이용한 문자열 비교
+        console.log("a" > "b");        // false
+        console.log("Java" > "JAVA")   // true
+        console.log("a".charCodeAt()); // 97
+        console.log("b".charCodeAt()); // 98
+        console.log("A".charCodeAt()); // 65
+    </script>
+</body>
+</html>

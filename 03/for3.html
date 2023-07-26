@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for문</title>
+</head>
+<body>
+    <script>
+        const gitbook = {
+            title:'깃&깃허브 사용법',
+            pubDate:'2019-12-08',
+            pages: 226,
+            finished: true,
+        }
+
+        for(key in gitbook) {
+            document.write(`${key}: ${gitbook[key]}<br>`);
+        }
+
+    </script>
+</body>
+</html>

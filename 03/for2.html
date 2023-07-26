@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for - in</title>
+</head>
+<body>
+    <script>
+        var names = ['Kim', 'Lee', 'Park', 'Choi', 'Han'];
+
+        // 객체에 대한 위치값을 가져와 반복문을 실행
+
+        for (var name in names) {
+            document.write(name + ' ');
+            document.write(names[name] + '<br>');
+        }
+
+        for (var name of names) {
+            document.write(name + '<br>');
+        }
+
+        names.forEach(function(name){
+            document.write(name + '<br>')
+        });
+
+        names.forEach(name => document.write(name + '<br>'));
+
+    </script>
+</body>
+</html>

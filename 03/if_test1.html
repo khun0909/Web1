@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문을 이용한 성적 산출</title>
+</head>
+<body>
+    <!-- 학점 출력: 90이상 A, 80~89 B, 70~79 C, 60~69 D, 60미만 F -->
+    <!-- 학점 범위: 0 ~ 100 사이값만 입력 가능 -->
+    <script>
+        let score = prompt('점수를 입력하세요.');
+
+        if(score){
+            score = Number(score);
+        } else {
+            document.write('값이 입력되지 않았습니다.');
+        }
+
+        if(score != null){
+
+            if(score < 0 || score > 100) {
+                alert('계산범위에서 벗어난 값입니다.(0~100)');
+            } else if (score >= 90) {
+                alert('당신의 학점은 A입니다.');
+            } else if (score >= 80) {
+                alert('당신의 학점은 B입니다.');
+            } else if (score >= 70) {
+                alert('당신의 학점은 C입니다.');
+            } else if (score >= 60) {
+                alert('당신의 학점은 D입니다.');
+            } else {
+                alert('당신의 학점은 F입니다.');
+            }
+
+        } else {
+            alert('값이 입력되지 않았습니다.');
+        }
+    </script>
+
+
+</body>
+</html>
